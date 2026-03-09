@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Un pequeño regalo</title>
+
+<style>
+
+/* Fondo morado con degradado */
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#4b0082,#7b2cbf,#c77dff);
+    background-size:400% 400%;
+    animation:fondo 10s infinite alternate;
+}
+
+/* Animación del fondo */
+@keyframes fondo{
+    0%{background-position:left;}
+    100%{background-position:right;}
+}
+
+/* Tarjeta central */
+.caja{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    width:420px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Título */
+h1{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+/* Texto */
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Botón */
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    background:#ffb3ff;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:#ffd6ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="caja">
+
+<h1>Hola ✨</h1>
+
+<p>
+Feliz día.  
+Sé que este regalo es algo sencillo y quizá no es algo grande, pero esta vez los tiempos no se acomodaron como me hubiera gustado.
+</p>
+
+<p>
+Aun así quería darte algo que al menos te sacara una sonrisa, porque a veces los detalles pequeños también guardan algo especial.
+</p>
+
+<p>
+Y bueno… ya que estamos aquí, tengo una pregunta.
+</p>
+
+<p style="font-size:20px;"><b>¿Te gustaría ir por una nieve al jardín? 🍦</b></p>
+
+<button onclick="alert('Entonces ya hay plan 😌')">
+Aceptar misión
+</button>
+
+</div>
+
+</body>
+</html>
